@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado El Buen Gusto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenedor-header">
+            <h1>Supermecado<span>El Buen Gusto</span></h1>
+            <nav class="navegador">
+                <a href="productos.html">Productos</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="#">Domicilios</a>
+                <a href="nosotros.html">Nosotros</a>
+                <!-- <a href="#">Vacio</a> -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Mis Domicilios</h2>
+        </div>
+        <div class="contenedor-alerta"></div>
+        <div class="contenedor-principal">
+            <div class="contenedor contenedor-domicilios">
+        </div>
+
+        <div class="contenedor-carro">
+            <div class="info-carrito">
+                <h3>Tu carrito</h3>
+                <p>Total:</p>
+                <div id="total"></div>
+            </div>
+            <div class="botones-carrito">
+                <button id="confirmarCarrito">Confirmar</button>
+                <button id="eliminarCarrito">Eliminar</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="contenedor contenedor__redes">
+            <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Whatsapp</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="./src/js-p/misDomicilios.js"></script>
+</body>
+</html>

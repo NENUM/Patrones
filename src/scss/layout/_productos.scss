@@ -1,0 +1,70 @@
+h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: $separacion;
+}
+
+.alerta{
+    padding: $separacion/2;
+    text-align: center;
+    color:$blanco;
+    width: 100%;
+    display: block;
+
+    &.error{
+        background-color: red;
+    }
+}
+
+.mensaje{
+    padding: $separacion/2;
+    text-align: center;
+    color:$blanco;
+    width: 100%;
+    display: block;
+    &.aprobado{
+        background-color: $verde;
+    }
+}
+
+.contenedor-productos{
+    margin-top: $separacion;
+    display: grid;
+    gap:$separacion/3;
+    grid-template-columns: repeat(2, 1fr);
+    
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include desktop{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include desktop{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    ul{
+        padding: 0;
+        margin-top: 1rem;
+    }
+    li{
+        list-style: none;
+        span{
+            font-weight: $bold;
+        }
+    }
+    .productosContainer{
+        width: 20rem;
+        height: 30rem;
+        box-shadow: 9px 6px 6px -2px rgba(0,0,0,0.39);
+        -webkit-box-shadow: 9px 6px 6px -2px rgba(0,0,0,0.39);
+        -moz-box-shadow: 9px 6px 6px -2px rgba(0,0,0,0.39);
+        text-align: center;
+        align-items: center;
+        .contenido-producto{
+            padding: 1rem;
+        }
+    }
+  
+}

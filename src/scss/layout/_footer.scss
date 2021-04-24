@@ -1,0 +1,15 @@
+.footer{
+    background-color: $negro;
+    height: 4rem;
+
+    .contenedor__redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            color: $blanco;
+            font-size: 2rem;
+            padding: 0 $separacion/2 0  0;
+        }
+    }
+}

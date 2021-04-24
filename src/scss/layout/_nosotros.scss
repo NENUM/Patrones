@@ -1,0 +1,15 @@
+.info-nosotros{
+    .imagen-nosotros{
+        width: 120rem;
+        height: 100%;
+    }
+    p{
+        color: $negro;
+    }
+}
+#map{
+    width: 120rem;
+    height: 45rem;
+    margin: $separacion;
+    align-items: center;
+}

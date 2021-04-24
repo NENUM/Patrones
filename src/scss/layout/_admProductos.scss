@@ -1,0 +1,80 @@
+.modulos{
+    text-align: center;
+    padding: $separacion;
+    .button{
+        color:$blanco;
+        font-size: 2rem;
+        background-color: $principal;
+        font-weight: $bold;
+        border-radius: 0.5rem;
+        padding: $separacion/3;
+        transition: 0.4s;
+        &:hover{
+            background: $negro;
+            color:$verde;
+        }
+    }
+}
+
+.popup{
+    background: rgba(0, 0,  0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .pop-formulario{
+        height: auto;
+        width: 50rem;
+        background-color: $blanco;
+        padding: 2rem;
+        border-radius: .5rem;
+        position: relative;
+        .input{
+            margin: 1rem auto;
+            display: block;
+        }
+        .close{
+            position: absolute;
+            width: 5%;
+            height: 5%;
+            right: .1rem;
+            top: 0.1rem;
+            cursor: pointer;
+        }
+        #añadirProducto{
+            display: flex;
+        }
+        #añadirProducto{
+            display: flex;
+        }
+        .editar{
+            display: flex;
+        }
+    }
+}
+
+.alerta{
+    padding: $separacion/2;
+    text-align: center;
+    color:$blanco;
+    width: 100%;
+    display: block;
+
+    &.error{
+        background-color: red;
+    }
+}
+
+.mensaje{
+    padding: $separacion/2;
+    text-align: center;
+    color:$blanco;
+    width: 100%;
+    display: block;
+    &.aprobado{
+        background-color: $verde;
+    }
+}

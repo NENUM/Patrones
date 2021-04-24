@@ -1,0 +1,77 @@
+.modulo-domicilios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedor-titulo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.accordion{
+    background-color: #eee;
+    color:black;
+    padding: 1rem;
+    width: 30rem;
+    height: 6rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    p{
+        margin: 0;
+    }
+    &:hover{
+        background-color: #ccc;
+    }
+}
+
+.panel{
+    display: none;
+    align-items: center;
+    overflow: hidden;
+    width: 30rem;
+    height: auto;
+    p{
+        color: $negro;
+    }
+}
+
+.accordionEnviado{
+    background-color: #eee;
+    color:black;
+    padding: 1rem;
+    width: 30rem;
+    height: 6rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    p{
+        margin: 0;
+    }
+    &:hover{
+        background-color: #ccc;
+    }
+}
+
+.panelEnviado{
+    //align-items: center;
+    //background-color: black;
+    display: none;
+    overflow: hidden;
+    height: auto;
+    p{
+        color: $negro;
+    }
+}
+
+.listado-domicilios{
+    text-align: center;
+    align-items: center;
+}
+
+.listado-domiciliosEnviados{
+    text-align: center;
+    align-items: center;
+}

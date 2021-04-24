@@ -1,0 +1,65 @@
+.contenedor-principal{
+    display: flex;
+    
+}
+
+.contenedor-domicilios{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    row-gap: $separacion/2;
+    width: 50rem;
+    ul{
+        height: 20rem;
+    }
+    .domicilios{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        height: 20rem;
+        
+        box-shadow: 1px 0px 14px 3px rgba(0,0,0,0.92);
+        -webkit-box-shadow: 1px 0px 14px 3px rgba(0,0,0,0.92);
+        -moz-box-shadow: 1px 0px 14px 3px rgba(0,0,0,0.92);
+        .imagenDomicilio{
+            width: 20rem;
+            height: 20rem;
+            padding: 2rem;
+            margin-right: $separacion;
+        }
+        
+        li{
+            list-style: none;
+            padding: 1rem;
+        }
+    }
+}
+
+.contenedor-carro{
+    top:10rem;
+    right: -5rem;
+    height: 25rem;
+    width: 25rem;   
+    position: sticky;
+    background-color:$principal;
+    .info-carrito{
+        h3{
+            color: $blanco;
+        }
+        padding: 2rem;
+        p{
+            font-size: 2.5rem;
+        }
+        margin-top: $separacion/3;
+        #total{
+            color: $blanco;
+            font-family: $fuente_principal;
+            font-weight: $bold;
+            font-size: 3rem;
+        }
+    }
+    .botones-carrito{
+        margin-top: $separacion/3;
+        padding-left: $separacion;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado El Buen Gusto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenedor-header">
+            <h1>Supermecado<span>El Buen Gusto</span></h1>
+            <nav class="navegador">
+                <a href="#">Domicilios</a>
+                <a href="#">Productos</a>
+                <a href="#">Domicilios</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Vacio</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Modulo de productos</h2>
+            <div class="opciones-administrador">
+                <div class="contenedor modulos">
+                    <a href="#" class="button boton-Añadir" id="formProAd">Añadir producto</a>
+                    <a href="#" class="button" id="">Editar Producto</a>
+                    <a href="#" class="button" id="">Eliminar Producto</a>
+                </div>
+                <div class="alerta-producto"></div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="pop-formulario">
+                <form>
+                    <img src="build/img/close.webp" alt="icono de cerrar" class="close">
+                    <label for="" class="editar">ID: </label>
+                    <input type="text" class="input editar" id="idProducto" disabled>
+                    <label for="">Nombre: </label>
+                    <input type="text" class="input" placeholder="Nombre del producto" id="nombreProducto" required>
+                    <label for="">Precio: </label>
+                    <input type="number" class="input" id="precioProducto" placeholder="Precio del producto" min="1" required>
+                    <label for="">Descripcion: </label>
+                    <textarea class="input" id="descripcionProducto" placeholder="Breve descripcion del producto" maxlength="100" required></textarea>
+                    <label for="">URL imagen: </label>
+                    <input type="url" class="input" id="imagenProducto" placeholder="url de imagen" required>
+                    <label for="">Cantidad: </label>
+                    <input type="number" class="input" id="cantidadProducto" min="1" placeholder="cantidad de productos" required>
+                    <label for="">Categoria: </label>
+                    <select class="input" id="categoriaProducto" required>
+                        <option selected disabled hidden>Seleccionar:</option>
+                        <option value="frutas">Frutas</option>
+                        <option value="verduras">Verduras</option>
+                        <option value="carnes">Carnes</option>
+                        <option value="aseo">Aseo</option>
+                        <option value="snacks">Snacks</option>
+                    </select>
+                    <label for="">Unidad: </label>
+                    <select class="input" id="unidadProducto" required>
+                        <option selected disabled hidden>Seleccionar:</option>
+                        <option value="unidad">unidades</option>
+                        <option value="libras">libras</option>
+                    </select>
+                    <input type="submit" value="Añadir Producto" id="añadirProducto">
+                    <input type="submit" value="Editar Producto" id="editarProducto">
+                </form>
+            </div>
+        </div>
+        <div class="contenedor contenedor-productos" id="productos"></div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor contenedor__redes">
+            <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Whatsapp</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="src/js-p/admin.js"></script>
+
+</body>
+</html>
