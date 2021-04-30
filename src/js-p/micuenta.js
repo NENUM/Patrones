@@ -42,7 +42,7 @@ function modificarUsuario(e) {
         mostrarMensaje('Usuario', 'modificado');
         
     }
-   
+
 
 modificar.onclick = modificarUsuario
 function limpiar(){
