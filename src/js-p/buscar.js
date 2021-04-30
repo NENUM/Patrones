@@ -1,6 +1,7 @@
 let productosContainer = document.querySelector('#productos'),
  buscarButton = document.getElementById("buscarButton"),
- buscarInput = document.getElementById("buscarInput");
+ buscarInput = document.getElementById("buscarInput"),
+ respuesta = document.querySelector('.respuesta');
 let productos = []
 
 function obtenerPalabra(){
@@ -13,7 +14,6 @@ const getProductos = () => {
         const respuestaProductos = response.data;
         console.log(`GET respuestaProductos`, respuestaProductos);
         productos = respuestaProductos
-        sinCoincidencias()
         render();
     })
      .catch(error => console.error(error));
@@ -34,16 +34,16 @@ function render () {
     }).join("")
     productosContainer.innerHTML = productosRender
     agregarCarrito()
+    sinCoincidencias()
 }
 
 function sinCoincidencias(){
-    if(!productos[0]){
-        productosContainer.innerHTML = `<div class="coincidencias"><h1>Ups! No se encontraron coincidencias para "${obtenerPalabra()}".</h1></div>`
+    if(productos.length===0){
+       return respuesta.innerHTML = `<div class="coincidencias"><h2>Ups! No se encontraron coincidencias para "${obtenerPalabra()}".</h2></div>`
     }
-    else{
-        console.log("Se encontraron coincidencias")
-    }
+
 }
+
 
 let contadorCarrito = 0;
 function agregarCarrito() {

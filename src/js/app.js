@@ -40,7 +40,7 @@ function agregarCarrito() {
     botonAgregar.forEach(function(p, i){
         p.addEventListener('click', ()=>{
             console.log(productos[i])
-            if (new Date().getHours()>=22) {
+            if (new Date().getHours()<=22) {
                 mostrarAlerta('Lo sentimos, no estamos en horario de atencion, nuestro horario de atencion es de Domingo a Domingo de 8 am a 9 pm', 'error')
             }else{
                 axios({

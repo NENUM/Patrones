@@ -15,30 +15,31 @@
             <h1>Supermecado<span>El Buen Gusto</span></h1>
             <nav class="navegador">
                 <a href="productos.html">Productos</a>
-                <a href="carrito.html">Carrito</a>
+                <a href="#">Carrito</a>
                 <a href="#">Domicilios</a>
-                <a href="nosotros.html">Nosotros</a>
-                <!-- <a href="#">Vacio</a> -->
-                <input type="search" id="buscarInput">
-                <a id="buscarButton">Buscar</a>
-                <a href="micuenta.html">Cuenta</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Vacio</a>
             </nav>
         </div>
     </header>
-    <main>
-        <div>
-            <h2>nuestros productos</h2>
-            <div class="contenedor-alerta"></div>
-            <div class="contenedor contenedor-productos" id="productos">
-            </div>
-        </div>
-    </main>
+    <div class="contenedor">
+    </form>
+    <div class="contenedor__login-register">
+    <form action="" class="formulario___register">
+        <h2>Datos de usuario</h2>
+        <input id="nombre" type="text" placeholder="Nombre Completo">
+        <input id="direccion" type="text" placeholder="Dirección">
+        <input id="barrio" type="text" placeholder="Barrio">
+        <input id="celular" type="text" placeholder="Celular">
+        <button id="btn2__modificar">modificar información</button>
+    </form>
+</div>
+    </div>  
     <footer class="footer">
         <div class="contenedor contenedor__redes">
             <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Whatsapp</a>
         </div>
     </footer>
-    <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
-    <script src="build/js/bundle.min.js"></script>
+    <script src="src/js-p/micuenta.js"></script>
 </body>
 </html>

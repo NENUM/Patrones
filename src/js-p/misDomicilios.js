@@ -154,6 +154,8 @@ function confirmarDomicilio(){
             .catch(e => {
                 console.log(e)
             })
+        }else{
+            mostrarAlerta('Debes agregar un producto al menos para enviar el domicilio', 'error')
         }
     }
 }
